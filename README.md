@@ -1,12 +1,13 @@
 # DRIFT
-<div style="text-align: center;">
-  <div style="font-size: 24px;">Drone Reaction Instability Framework for Testing</div>
 
-  <div style="text-align: center;">
-    <img src="images/DRIFT_LogoImage.jpg" alt="Gimbal Drift" width="300"/>
-    <img src="images/Drift_Real_Build.jpg" alt="Gimbal Drift" width="300"/>
-  </div>
-</div>
+<p align="center" style="font-size:24px;">
+  <strong>Drone Reaction Instability Framework for Testing</strong>
+</p>
+
+<p align="center">
+  <img src="images/DRIFT_LogoImage.jpg" alt="Gimbal Drift" width="300"/>
+  <img src="images/Drift_Real_Build.jpg" alt="Gimbal Drift" width="300"/>
+</p>
 
 ## TLDR When running
 
@@ -19,6 +20,11 @@ stty -F /dev/ttyACM0 cs8 115200 ignbrk -brkint -imaxbel -opost -onlcr -isig -ica
 cat /dev/ttyACM0 >> test_format5.txt
 tail -f /dev/ttyACM0 -s 0.0001 >> test_format5.txt
 ```
+
+## Matlab and Control
+
+Work in progress.
+We're transferring the cad model with material properties from fusion360 to Matlab simscape to have an accurate model for the closed-loop controller design,
 
 ## Arduino setup
 
